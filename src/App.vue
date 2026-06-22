@@ -192,7 +192,7 @@ onBeforeUnmount(() => {
 
       <div class="hero">
         <div class="hero__intro">
-          <p class="technical-label">01 / Diretório curado</p>
+          <p class="technical-label">01 / Home</p>
           <h1>Links que merecem ficar por perto.</h1>
           <p class="hero__description">
             Uma coleção visual de ferramentas, referências e atalhos para criar melhor
