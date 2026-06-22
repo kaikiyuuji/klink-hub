@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, onBeforeUnmount, ref } from 'vue'
 
 const props = defineProps({
   link: {
@@ -16,6 +16,9 @@ defineEmits(['select-tag'])
 
 const previewLoaded = ref(false)
 const previewFailed = ref(false)
+const descriptionOpen = ref(false)
+const descriptionHoverOpen = ref(false)
+let descriptionTimer = null
 
 const domain = computed(() => {
   try {
@@ -36,10 +39,37 @@ function onPreviewLoad() {
 function onPreviewError() {
   previewFailed.value = true
 }
+
+function toggleDescription() {
+  descriptionOpen.value = !descriptionOpen.value
+}
+
+function closeDescription() {
+  descriptionOpen.value = false
+}
+
+function scheduleDescription() {
+  window.clearTimeout(descriptionTimer)
+  descriptionTimer = window.setTimeout(() => {
+    descriptionHoverOpen.value = true
+  }, 650)
+}
+
+function cancelDescription() {
+  window.clearTimeout(descriptionTimer)
+  descriptionHoverOpen.value = false
+}
+
+onBeforeUnmount(() => {
+  window.clearTimeout(descriptionTimer)
+})
 </script>
 
 <template>
-  <article class="link-card">
+  <article
+    class="link-card"
+    :class="{ 'description-is-open': descriptionOpen || descriptionHoverOpen }"
+  >
     <a
       class="preview"
       :href="link.url"
@@ -96,7 +126,39 @@ function onPreviewError() {
         <span aria-hidden="true">↗</span>
       </a>
 
-      <p class="link-card__description">{{ link.description }}</p>
+      <div
+        class="description-shell"
+        :class="{ 'is-open': descriptionOpen || descriptionHoverOpen }"
+        tabindex="0"
+        @mouseenter="scheduleDescription"
+        @mouseleave="cancelDescription"
+        @keydown.esc="closeDescription"
+      >
+        <p class="link-card__description">{{ link.description }}</p>
+        <button
+          class="description-toggle"
+          type="button"
+          :aria-expanded="descriptionOpen"
+          @click="toggleDescription"
+        >
+          {{ descriptionOpen ? 'Fechar descrição' : 'Ler descrição completa' }}
+          <span aria-hidden="true">{{ descriptionOpen ? '×' : '+' }}</span>
+        </button>
+
+        <div class="description-popover" role="tooltip">
+          <div class="description-popover__header">
+            <span>Descrição completa</span>
+            <button
+              type="button"
+              aria-label="Fechar descrição"
+              @click="closeDescription"
+            >
+              ×
+            </button>
+          </div>
+          <p>{{ link.description }}</p>
+        </div>
+      </div>
 
       <div class="tags" aria-label="Tags">
         <button
@@ -289,6 +351,7 @@ function onPreviewError() {
 }
 
 .link-card__body {
+  position: relative;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -368,15 +431,96 @@ function onPreviewError() {
   transform: translate(2px, -2px);
 }
 
+.description-shell {
+  position: relative;
+  margin-top: 1rem;
+  outline: none;
+}
+
 .link-card__description {
   display: -webkit-box;
   overflow: hidden;
-  margin: 1rem 0 0;
+  margin: 0;
   color: var(--muted);
   font-size: 0.8rem;
   line-height: 1.65;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+}
+
+.description-toggle {
+  display: none;
+}
+
+.description-popover {
+  position: absolute;
+  z-index: 12;
+  top: -0.65rem;
+  right: -0.65rem;
+  left: -0.65rem;
+  max-height: min(300px, 55vh);
+  overflow-y: auto;
+  visibility: hidden;
+  border: 1px solid var(--accent);
+  background: var(--paper-raised);
+  box-shadow: 8px 8px 0 color-mix(in srgb, var(--accent) 84%, transparent);
+  opacity: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transform: translateY(5px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    visibility 180ms ease;
+}
+
+.description-popover__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.65rem;
+  color: var(--accent);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.description-popover__header button {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.description-popover p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.82rem;
+  line-height: 1.72;
+}
+
+.description-shell:focus .description-popover,
+.description-shell:focus-within .description-popover,
+.description-shell.is-open .description-popover {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.link-card:has(.description-shell:focus-within),
+.link-card.description-is-open {
+  z-index: 20;
 }
 
 .tags {
@@ -448,6 +592,58 @@ function onPreviewError() {
   }
   to {
     background-position: -200% 0;
+  }
+}
+
+@media (hover: none) and (pointer: coarse), (max-width: 620px) {
+  .description-shell {
+    padding-bottom: 0.15rem;
+  }
+
+  .description-toggle {
+    display: flex;
+    min-height: 36px;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.65rem;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: var(--paper);
+    padding: 0.45rem 0.6rem;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.53rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .description-toggle span {
+    color: var(--accent);
+    font-size: 0.9rem;
+  }
+
+  .description-popover {
+    top: -0.5rem;
+    right: -0.35rem;
+    left: -0.35rem;
+    max-height: min(360px, 62vh);
+    box-shadow: 6px 6px 0 var(--accent);
+  }
+
+  .description-popover__header button {
+    display: grid;
+    place-items: center;
+  }
+
+  .description-shell:focus:not(.is-open) .description-popover,
+  .description-shell:focus-within:not(.is-open) .description-popover {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(5px);
   }
 }
 </style>

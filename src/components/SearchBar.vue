@@ -44,11 +44,16 @@ function clearSearch() {
 }
 
 .search-box__label {
-  color: var(--muted);
+  width: fit-content;
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--accent) 22%, transparent);
+  color: var(--ink);
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.6rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.16em;
+  padding: 0.38rem 0.52rem;
   text-transform: uppercase;
 }
 

@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import CategoryFilter from './components/CategoryFilter.vue'
 import EmptyState from './components/EmptyState.vue'
 import LinkCard from './components/LinkCard.vue'
@@ -12,6 +12,10 @@ const loadError = ref('')
 const searchQuery = ref('')
 const activeCategory = ref('Todos')
 const isDark = ref(false)
+const headerHidden = ref(false)
+const headerElevated = ref(false)
+let lastScrollY = 0
+let scrollFrame = null
 
 const normalizeText = (value = '') =>
   String(value)
@@ -89,10 +93,35 @@ function reloadPage() {
   window.location.reload()
 }
 
+function updateHeaderVisibility() {
+  const currentScrollY = Math.max(window.scrollY, 0)
+  const delta = currentScrollY - lastScrollY
+
+  headerElevated.value = currentScrollY > 12
+
+  if (currentScrollY < 96) {
+    headerHidden.value = false
+  } else if (delta > 7) {
+    headerHidden.value = true
+  } else if (delta < -7) {
+    headerHidden.value = false
+  }
+
+  lastScrollY = currentScrollY
+  scrollFrame = null
+}
+
+function handleScroll() {
+  if (scrollFrame) return
+  scrollFrame = window.requestAnimationFrame(updateHeaderVisibility)
+}
+
 onMounted(async () => {
   const savedTheme = localStorage.getItem('klink-theme')
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
   applyTheme(savedTheme ? savedTheme === 'dark' : prefersDark)
+  lastScrollY = window.scrollY
+  window.addEventListener('scroll', handleScroll, { passive: true })
 
   try {
     const response = await fetch('/links.json')
@@ -112,12 +141,24 @@ onMounted(async () => {
     isLoading.value = false
   }
 })
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+  if (scrollFrame) window.cancelAnimationFrame(scrollFrame)
+})
 </script>
 
 <template>
   <div class="app-shell">
     <header class="site-header">
-      <div class="topbar">
+      <div
+        class="topbar"
+        :class="{
+          'is-hidden': headerHidden,
+          'is-elevated': headerElevated,
+        }"
+        @focusin="headerHidden = false"
+      >
         <a class="brand" href="#" aria-label="Voltar ao topo">
           <span class="brand__mark" aria-hidden="true">KH</span>
           <span class="brand__copy">
