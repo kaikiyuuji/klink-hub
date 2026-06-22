@@ -4,27 +4,896 @@
     "url": "https://intro-hd.net",
     "description": "Use quando precisar de templates prontos para After Effects ou Premiere sem partir do zero. Tem intros, transições, lower thirds e títulos animados — útil para acelerar edições de vídeo com aparência profissional.",
     "category": "Vídeo > Templates e Assets",
-    "tags": ["after effects", "premiere pro", "templates", "motion graphics", "lower thirds", "transições"]
+    "tags": [
+      "after effects",
+      "premiere pro",
+      "templates",
+      "motion graphics",
+      "lower thirds",
+      "transições"
+    ],
+    "preview": "/previews/intro-hd.jpg"
   },
   {
     "title": "Frameset",
     "url": "https://frameset.app/search",
     "description": "Busca de frames de filmes específicos por cena, estilo ou composição. Ideal para montar moodboards, estudar enquadramento e iluminação, ou encontrar referências visuais antes de filmar ou editar.",
     "category": "Vídeo > Referência Cinematográfica",
-    "tags": ["frames", "cinema", "composição", "iluminação", "color grading", "moodboard", "direção de fotografia"]
+    "tags": [
+      "frames",
+      "cinema",
+      "composição",
+      "iluminação",
+      "color grading",
+      "moodboard",
+      "direção de fotografia"
+    ],
+    "preview": "/previews/frameset.jpg"
   },
   {
     "title": "Clip.Cafe",
     "url": "https://clip.cafe",
     "description": "Banco de cenas e falas de filmes pesquisáveis por diálogo ou personagem. Use quando precisar encontrar uma cena específica de um filme para referência narrativa, análise ou criação de conteúdo.",
     "category": "Vídeo > Referência Cinematográfica",
-    "tags": ["filmes", "cenas", "diálogos", "pesquisa", "narrativa", "referência"]
+    "tags": [
+      "filmes",
+      "cenas",
+      "diálogos",
+      "pesquisa",
+      "narrativa",
+      "referência"
+    ],
+    "preview": "/previews/clip-cafe.jpg"
   },
   {
     "title": "PlayPhrase",
     "url": "https://www.playphrase.me",
     "description": "Digite qualquer frase e veja todas as cenas de filmes e séries onde ela foi dita. Útil para encontrar referências de timing, atuação, ou criar compilações e memes.",
     "category": "Vídeo > Referência Cinematográfica",
-    "tags": ["filmes", "séries", "frases", "atuação", "timing", "memes", "compilação"]
+    "tags": [
+      "filmes",
+      "séries",
+      "frases",
+      "atuação",
+      "timing",
+      "memes",
+      "compilação"
+    ],
+    "preview": "/previews/playphrase.jpg"
+  },
+  {
+    "title": "LTX Studio",
+    "url": "https://ltx.studio",
+    "description": "Plataforma com IA para criar storyboards, shot lists e pré-visualizações de cenas. Use na fase de pré-produção para planejar sequências visuais sem precisar desenhar manualmente.",
+    "category": "Vídeo > Pré-produção",
+    "tags": [
+      "storyboard",
+      "shot list",
+      "pré-produção",
+      "ia",
+      "planejamento",
+      "cenas"
+    ],
+    "preview": "/previews/ltx-studio.jpg"
+  },
+  {
+    "title": "TextLab",
+    "url": "https://textlab.javii.tools",
+    "description": "Gera imagens estilizadas de mensagens de texto (tipo WhatsApp ou iMessage). Útil para criar mockups de conversas em vídeos, apresentações ou conteúdo para redes sociais.",
+    "category": "Vídeo > Assets Visuais",
+    "tags": [
+      "mensagens",
+      "mockup",
+      "whatsapp",
+      "imagem",
+      "redes sociais",
+      "conteúdo"
+    ],
+    "preview": "/previews/textlab.jpg"
+  },
+  {
+    "title": "Jitter Video",
+    "url": "https://jitter.video",
+    "description": "Cria elementos e componentes animados exportáveis para vídeo. Use quando precisar de animações de texto, ícones ou chamadas visuais para inserir em edições sem precisar do After Effects.",
+    "category": "Vídeo > Assets Visuais",
+    "tags": [
+      "animação",
+      "componentes",
+      "motion design",
+      "exportar",
+      "vídeo",
+      "chamadas visuais"
+    ],
+    "preview": "/previews/jitter-video.jpg"
+  },
+  {
+    "title": "Cobalt Tools",
+    "url": "https://cobalt.tools",
+    "description": "Baixa vídeos e áudios de YouTube, Instagram, TikTok e outras redes sem anúncios ou cadastro. A opção mais limpa e direta para salvar mídias da internet.",
+    "category": "Vídeo > Download de Mídia",
+    "tags": [
+      "download",
+      "youtube",
+      "instagram",
+      "tiktok",
+      "vídeo",
+      "áudio",
+      "sem anúncios"
+    ],
+    "preview": "/previews/cobalt-tools.jpg"
+  },
+  {
+    "title": "Design Everywhere",
+    "url": "https://designeverywhere.co",
+    "description": "Curadoria de referências de design digital contemporâneo: branding, interfaces, motion e direção de arte. Use quando estiver sem ideias visuais ou precisar entender tendências atuais de design.",
+    "category": "Design > Inspiração e Referência",
+    "tags": [
+      "inspiração",
+      "branding",
+      "interfaces",
+      "motion",
+      "direção de arte",
+      "tendências"
+    ],
+    "preview": "/previews/design-everywhere.jpg"
+  },
+  {
+    "title": "Visuelle",
+    "url": "https://visuelle.co.uk",
+    "description": "Galeria focada em design gráfico impresso e editorial: posters, capas, identidades visuais e tipografia. Referência forte para quem trabalha com design mais conceitual e minimalista.",
+    "category": "Design > Inspiração e Referência",
+    "tags": [
+      "design gráfico",
+      "editorial",
+      "poster",
+      "tipografia",
+      "identidade visual",
+      "minimalismo"
+    ],
+    "preview": "/previews/visuelle.jpg"
+  },
+  {
+    "title": "THE INDEX",
+    "url": "https://theindex.website/projects",
+    "description": "Galeria de websites e experiências web criativos e incomuns. Use quando precisar de referência para projetos de UX/UI inovadores ou quiser entender o que está na fronteira do design web.",
+    "category": "Design > Inspiração e Referência",
+    "tags": [
+      "ui",
+      "ux",
+      "web design",
+      "criatividade",
+      "interativo",
+      "tendências",
+      "sites"
+    ],
+    "preview": "/previews/the-index.jpg"
+  },
+  {
+    "title": "Design Systems Surf",
+    "url": "https://designsystems.surf",
+    "description": "Biblioteca de design systems reais de empresas como Airbnb, Atlassian, IBM e outros. Use para estudar como grandes times organizam componentes, tokens, documentação e padrões visuais.",
+    "category": "Design > Design Systems",
+    "tags": [
+      "design system",
+      "componentes",
+      "tokens",
+      "documentação",
+      "ui",
+      "padrões",
+      "referência"
+    ],
+    "preview": "/previews/design-systems-surf.jpg"
+  },
+  {
+    "title": "Adapty Paywall Library",
+    "url": "https://adapty.io/paywall-library",
+    "description": "Coleção de telas de paywall e assinatura de apps reais. Use quando for projetar fluxos de monetização mobile e quiser ver como os melhores apps estruturam preços e conversão.",
+    "category": "Design > Referência Mobile",
+    "tags": [
+      "paywall",
+      "assinatura",
+      "monetização",
+      "mobile",
+      "ux",
+      "conversão",
+      "pricing"
+    ],
+    "preview": "/previews/adapty-paywall-library.jpg"
+  },
+  {
+    "title": "Gumroad Mockups",
+    "url": "https://gumroad.com/design",
+    "description": "Marketplace com mockups para apresentar designs — inclui dispositivos, embalagens, papelaria e cenários. Tem opções gratuitas e pagas, útil para montar apresentações de projetos de branding.",
+    "category": "Design > Mockups",
+    "tags": [
+      "mockup",
+      "branding",
+      "embalagem",
+      "dispositivos",
+      "apresentação",
+      "marketplace"
+    ],
+    "preview": "/previews/gumroad-mockups.jpg"
+  },
+  {
+    "title": "Mockups Design",
+    "url": "https://mockups-design.com",
+    "description": "Coleção gratuita de mockups de alta qualidade para notebooks, celulares, outdoors e cartões. Use para apresentar seu design de forma realista sem precisar de Photoshop avançado.",
+    "category": "Design > Mockups",
+    "tags": [
+      "mockup",
+      "gratuito",
+      "notebook",
+      "celular",
+      "outdoor",
+      "apresentação"
+    ],
+    "preview": "/previews/mockups-design.jpg"
+  },
+  {
+    "title": "Craftwork Mockups",
+    "url": "https://craftwork.design/free/mockups",
+    "description": "Mockups gratuitos com visual moderno para UI, packaging e branding digital. Boa opção para apresentar interfaces de apps ou sites de forma profissional.",
+    "category": "Design > Mockups",
+    "tags": [
+      "mockup",
+      "gratuito",
+      "ui",
+      "packaging",
+      "branding",
+      "interfaces digitais"
+    ],
+    "preview": "/previews/craftwork-mockups.jpg"
+  },
+  {
+    "title": "Fontshare",
+    "url": "https://www.fontshare.com",
+    "description": "Biblioteca de fontes gratuitas para uso comercial, mantida pelo Indian Type Foundry. Qualidade tipográfica acima da média — substitui bem fontes pagas em projetos de branding e interfaces.",
+    "category": "Design > Tipografia",
+    "tags": [
+      "fontes",
+      "tipografia",
+      "gratuito",
+      "comercial",
+      "branding",
+      "interfaces"
+    ],
+    "preview": "/previews/fontshare.jpg"
+  },
+  {
+    "title": "Spline",
+    "url": "https://app.spline.design/home",
+    "description": "Editor 3D no navegador para criar objetos e cenas interativas incorporáveis em sites. Use quando quiser adicionar elementos 3D a uma landing page ou portfólio sem instalar software pesado.",
+    "category": "Design > 3D e Animação Web",
+    "tags": [
+      "3d",
+      "animação",
+      "web",
+      "interativo",
+      "landing page",
+      "modelagem",
+      "navegador"
+    ],
+    "preview": "/previews/spline.jpg"
+  },
+  {
+    "title": "Unicorn Studio",
+    "url": "https://www.unicorn.studio/dashboard",
+    "description": "Cria animações e efeitos visuais sofisticados para websites sem código. Use para adicionar camadas de motion design em landing pages ou portfólios que precisam de impacto visual.",
+    "category": "Design > 3D e Animação Web",
+    "tags": [
+      "motion design",
+      "animação",
+      "landing page",
+      "web",
+      "sem código",
+      "efeitos visuais"
+    ],
+    "preview": "/previews/unicorn-studio.jpg"
+  },
+  {
+    "title": "Photopea",
+    "url": "https://photopea.com",
+    "description": "Editor de imagem completo no navegador, compatível com arquivos PSD do Photoshop. Use quando precisar editar imagens com camadas, máscaras e filtros sem ter o Photoshop instalado.",
+    "category": "Imagem > Edição",
+    "tags": [
+      "photoshop",
+      "psd",
+      "edição",
+      "camadas",
+      "máscaras",
+      "navegador",
+      "gratuito"
+    ],
+    "preview": "/previews/photopea.jpg"
+  },
+  {
+    "title": "Remove.bg",
+    "url": "https://remove.bg",
+    "description": "Remove o fundo de qualquer imagem em segundos com IA. Use para criar thumbnails, fotos de produto ou assets de design sem precisar recortar manualmente.",
+    "category": "Imagem > Edição",
+    "tags": [
+      "remoção de fundo",
+      "ia",
+      "thumbnail",
+      "produto",
+      "recorte",
+      "automático"
+    ],
+    "preview": "/previews/remove-bg.jpg"
+  },
+  {
+    "title": "Cleanup.pictures",
+    "url": "https://cleanup.pictures",
+    "description": "Apaga objetos, pessoas ou imperfeições de fotos com IA. Útil para limpar imagens de produto, remover elementos distraidores ou retocar fotos sem Photoshop.",
+    "category": "Imagem > Edição",
+    "tags": [
+      "ia",
+      "remoção de objetos",
+      "retoque",
+      "foto",
+      "limpeza",
+      "inpainting"
+    ],
+    "preview": "/previews/cleanup-pictures.jpg"
+  },
+  {
+    "title": "Unscreen",
+    "url": "https://unscreen.com",
+    "description": "Remove o fundo de vídeos e GIFs automaticamente, sem chroma key. Use quando precisar destacar pessoas ou objetos em vídeo sem ter estúdio com fundo verde.",
+    "category": "Imagem > Edição",
+    "tags": [
+      "remoção de fundo",
+      "vídeo",
+      "gif",
+      "chroma key",
+      "ia",
+      "automático"
+    ],
+    "preview": "/previews/unscreen.jpg"
+  },
+  {
+    "title": "Squoosh",
+    "url": "https://squoosh.app",
+    "description": "Comprime imagens no navegador com controle preciso de qualidade e formato. Use antes de publicar imagens na web para reduzir o peso sem perda visual perceptível.",
+    "category": "Imagem > Otimização",
+    "tags": [
+      "compressão",
+      "otimização",
+      "web",
+      "png",
+      "jpeg",
+      "webp",
+      "performance"
+    ],
+    "preview": "/previews/squoosh.jpg"
+  },
+  {
+    "title": "TinEye",
+    "url": "https://tineye.com",
+    "description": "Busca reversa de imagens que rastreia onde uma foto aparece na internet. Use para verificar a origem de uma imagem, detectar uso não autorizado do seu trabalho ou encontrar versões em maior resolução.",
+    "category": "Imagem > Pesquisa",
+    "tags": [
+      "busca reversa",
+      "origem",
+      "rastreamento",
+      "direitos autorais",
+      "resolução"
+    ],
+    "preview": "/previews/tineye.jpg"
+  },
+  {
+    "title": "Freesound",
+    "url": "https://freesound.org",
+    "description": "Biblioteca colaborativa com mais de 500 mil efeitos sonoros gratuitos. Use quando precisar de sons ambiente, impactos, foley ou trilhas para vídeos, jogos ou podcasts.",
+    "category": "Áudio > Efeitos Sonoros",
+    "tags": [
+      "efeitos sonoros",
+      "foley",
+      "gratuito",
+      "sons ambiente",
+      "vídeo",
+      "jogos",
+      "podcast"
+    ],
+    "preview": "/previews/freesound.jpg"
+  },
+  {
+    "title": "TuneFind",
+    "url": "https://www.tunefind.com",
+    "description": "Descobre músicas usadas em filmes, séries e jogos com timestamps de cena. Use quando ouvir uma música em um episódio ou trailer e quiser saber o nome, ou para pesquisar trilhas por estilo.",
+    "category": "Áudio > Descoberta Musical",
+    "tags": [
+      "trilha sonora",
+      "filmes",
+      "séries",
+      "jogos",
+      "descoberta",
+      "identificação"
+    ],
+    "preview": "/previews/tunefind.jpg"
+  },
+  {
+    "title": "Music for Programming",
+    "url": "https://musicforprogramming.net",
+    "description": "Coleção de playlists instrumentais e ambientes sonoros selecionados para manter foco durante trabalho técnico. Funciona bem para programação, design ou qualquer tarefa que exige concentração.",
+    "category": "Áudio > Foco e Produtividade",
+    "tags": [
+      "música",
+      "foco",
+      "produtividade",
+      "programação",
+      "instrumental",
+      "ambient",
+      "concentração"
+    ],
+    "preview": "/previews/music-for-programming.jpg"
+  },
+  {
+    "title": "myNoise",
+    "url": "https://mynoise.net",
+    "description": "Gerador de sons ambiente com dezenas de ambientes configuráveis: chuva, café, floresta, metrô, ruído branco e mais. Use para mascarar barulhos externos e manter o foco no trabalho.",
+    "category": "Áudio > Foco e Produtividade",
+    "tags": [
+      "sons ambiente",
+      "ruído branco",
+      "foco",
+      "concentração",
+      "personalização",
+      "relaxamento"
+    ],
+    "preview": "/previews/mynoise.jpg"
+  },
+  {
+    "title": "Radio Garden",
+    "url": "https://radio.garden",
+    "description": "Mapa interativo do planeta com rádios ao vivo de qualquer cidade do mundo. Basta clicar em um ponto no globo para ouvir a rádio local. Ótimo para descobrir música e cultura de outros países.",
+    "category": "Áudio > Rádio e Streaming",
+    "tags": [
+      "rádio",
+      "ao vivo",
+      "mundo",
+      "música",
+      "cultura",
+      "mapa interativo"
+    ],
+    "preview": "/previews/radio-garden.jpg"
+  },
+  {
+    "title": "Regex101",
+    "url": "https://regex101.com",
+    "description": "Editor interativo de expressões regulares com explicação linha a linha de cada parte do padrão. Use sempre que precisar criar ou depurar um regex — mostra os matches em tempo real com destaque visual.",
+    "category": "Desenvolvimento > Ferramentas de Código",
+    "tags": [
+      "regex",
+      "expressões regulares",
+      "debug",
+      "padrões",
+      "string",
+      "validação"
+    ],
+    "preview": "/previews/regex101.jpg"
+  },
+  {
+    "title": "ExplainShell",
+    "url": "https://explainshell.com",
+    "description": "Cola um comando Linux e o site explica cada parte e flag separadamente. Essencial para entender scripts desconhecidos ou aprender o que cada parâmetro de um comando faz.",
+    "category": "Desenvolvimento > Ferramentas de Código",
+    "tags": [
+      "linux",
+      "terminal",
+      "shell",
+      "bash",
+      "comandos",
+      "flags",
+      "aprendizado"
+    ],
+    "preview": "/previews/explainshell.jpg"
+  },
+  {
+    "title": "CodeBeautify",
+    "url": "https://codebeautify.org",
+    "description": "Suite online com ferramentas para formatar, validar, minificar e converter JSON, XML, CSS, SQL e outros formatos. Use quando precisar limpar ou transformar um arquivo de dados rapidamente.",
+    "category": "Desenvolvimento > Ferramentas de Código",
+    "tags": [
+      "formatação",
+      "json",
+      "xml",
+      "sql",
+      "validação",
+      "conversão",
+      "minificação"
+    ],
+    "preview": "/previews/codebeautify.jpg"
+  },
+  {
+    "title": "Carbon",
+    "url": "https://carbon.now.sh",
+    "description": "Transforma trechos de código em imagens bonitas para compartilhar em redes sociais ou apresentações. Suporta dezenas de linguagens e temas visuais.",
+    "category": "Desenvolvimento > Visualização de Código",
+    "tags": [
+      "código",
+      "imagem",
+      "compartilhamento",
+      "redes sociais",
+      "screenshot",
+      "apresentação"
+    ],
+    "preview": "/previews/carbon.jpg"
+  },
+  {
+    "title": "Ray.so",
+    "url": "https://ray.so",
+    "description": "Alternativa ao Carbon com interface mais simples para gerar screenshots elegantes de código. Use para criar imagens de código com fundo degrade para posts e documentações.",
+    "category": "Desenvolvimento > Visualização de Código",
+    "tags": [
+      "código",
+      "screenshot",
+      "visual",
+      "compartilhamento",
+      "minimalismo",
+      "degrade"
+    ],
+    "preview": "/previews/ray-so.jpg"
+  },
+  {
+    "title": "Excalidraw",
+    "url": "https://excalidraw.com",
+    "description": "Quadro branco colaborativo com visual de desenho à mão. Ideal para esboçar arquiteturas de sistemas, fluxos de dados ou diagramas rápidos sem formalidade — tudo parece um rascunho intencional.",
+    "category": "Desenvolvimento > Diagramas e Whiteboards",
+    "tags": [
+      "whiteboard",
+      "diagrama",
+      "arquitetura",
+      "colaboração",
+      "brainstorming",
+      "esboço",
+      "sistemas"
+    ],
+    "preview": "/previews/excalidraw.jpg"
+  },
+  {
+    "title": "tldraw",
+    "url": "https://tldraw.com",
+    "description": "Whiteboard infinito com design mais polido e colaboração em tempo real. Use para diagramas, fluxos de produto, mapas mentais ou qualquer coisa que precise de um canvas livre e compartilhável.",
+    "category": "Desenvolvimento > Diagramas e Whiteboards",
+    "tags": [
+      "whiteboard",
+      "colaboração",
+      "tempo real",
+      "fluxo",
+      "mapa mental",
+      "canvas"
+    ],
+    "preview": "/previews/tldraw.jpg"
+  },
+  {
+    "title": "Chat2DB",
+    "url": "https://chat2db.ai/pt-PT",
+    "description": "Cliente de banco de dados com IA integrada que permite escrever e entender queries SQL em linguagem natural. Use quando precisar consultar bancos de dados sem lembrar toda a sintaxe SQL.",
+    "category": "Desenvolvimento > Banco de Dados",
+    "tags": [
+      "banco de dados",
+      "sql",
+      "ia",
+      "queries",
+      "linguagem natural",
+      "gerenciamento",
+      "produtividade"
+    ],
+    "preview": "/previews/chat2db.jpg"
+  },
+  {
+    "title": "PublicAPIs",
+    "url": "https://public-api.org",
+    "description": "Diretório de APIs públicas organizadas por categoria. Use quando estiver iniciando um projeto e precisar saber quais APIs existem para a funcionalidade que quer implementar.",
+    "category": "Desenvolvimento > APIs e Referência",
+    "tags": [
+      "api",
+      "público",
+      "diretório",
+      "integração",
+      "desenvolvimento",
+      "dados",
+      "serviços"
+    ],
+    "preview": "/previews/publicapis.jpg"
+  },
+  {
+    "title": "QuickRef",
+    "url": "https://quickref.me/index.html",
+    "description": "Cheatsheets de alta qualidade para dezenas de linguagens, frameworks e ferramentas. Use quando precisar lembrar rapidamente de sintaxe ou comandos sem abrir a documentação completa.",
+    "category": "Desenvolvimento > APIs e Referência",
+    "tags": [
+      "cheatsheet",
+      "referência rápida",
+      "sintaxe",
+      "linguagens",
+      "frameworks",
+      "ferramentas"
+    ],
+    "preview": "/previews/quickref.jpg"
+  },
+  {
+    "title": "DevDocs",
+    "url": "https://devdocs.io",
+    "description": "Agrega a documentação oficial de centenas de tecnologias em uma única interface com busca unificada. Use como ponto central de consulta técnica — funciona offline e é mais rápido que navegar por sites separados.",
+    "category": "Desenvolvimento > APIs e Referência",
+    "tags": [
+      "documentação",
+      "referência",
+      "offline",
+      "busca unificada",
+      "tecnologias",
+      "linguagens"
+    ],
+    "preview": "/previews/devdocs.jpg"
+  },
+  {
+    "title": "Glossário DevOps",
+    "url": "https://guilhermeonrails.github.io/dicionario-devops",
+    "description": "Dicionário em português com os principais termos e conceitos de DevOps. Use quando encontrar um termo desconhecido em CI/CD, containers, infraestrutura ou SRE e precisar de uma explicação rápida.",
+    "category": "Desenvolvimento > DevOps",
+    "tags": [
+      "devops",
+      "glossário",
+      "ci/cd",
+      "containers",
+      "infraestrutura",
+      "sre",
+      "conceitos"
+    ],
+    "preview": "/previews/glossario-devops.jpg"
+  },
+  {
+    "title": "DorkGPT",
+    "url": "https://www.dorkgpt.com",
+    "description": "Gera automaticamente pesquisas em formato Google Dorks a partir de uma descrição em linguagem natural. Use para encontrar arquivos expostos, pages específicas ou informações técnicas avançadas no Google.",
+    "category": "Desenvolvimento > Busca e IA",
+    "tags": [
+      "google dorks",
+      "ia",
+      "busca avançada",
+      "osint",
+      "arquivos",
+      "pesquisa técnica"
+    ],
+    "preview": "/previews/dorkgpt.jpg"
+  },
+  {
+    "title": "Consensus",
+    "url": "https://consensus.app",
+    "description": "Motor de busca com IA que responde perguntas usando estudos científicos reais como fonte. Use quando precisar embasar uma decisão ou argumento com evidências acadêmicas, sem precisar ler dezenas de papers.",
+    "category": "Pesquisa > Ciência e Acadêmico",
+    "tags": [
+      "pesquisa científica",
+      "ia",
+      "papers",
+      "evidências",
+      "acadêmico",
+      "estudos"
+    ],
+    "preview": "/previews/consensus.jpg"
+  },
+  {
+    "title": "Connected Papers",
+    "url": "https://connectedpapers.com",
+    "description": "Gera um mapa visual de artigos científicos relacionados a um paper de referência. Use no início de uma pesquisa para descobrir rapidamente quais são os trabalhos mais relevantes em uma área.",
+    "category": "Pesquisa > Ciência e Acadêmico",
+    "tags": [
+      "papers",
+      "mapa visual",
+      "referências",
+      "pesquisa",
+      "ciência",
+      "grafo",
+      "literatura"
+    ],
+    "preview": "/previews/connected-papers.jpg"
+  },
+  {
+    "title": "SciSpace",
+    "url": "https://scispace.com",
+    "description": "Lê e explica artigos científicos em linguagem simples com IA. Use quando encontrar um paper denso e quiser entender rapidamente os pontos principais sem dominar o jargão da área.",
+    "category": "Pesquisa > Ciência e Acadêmico",
+    "tags": [
+      "ia",
+      "papers",
+      "explicação",
+      "leitura",
+      "acadêmico",
+      "simplificação",
+      "ciência"
+    ],
+    "preview": "/previews/scispace.jpg"
+  },
+  {
+    "title": "Elicit",
+    "url": "https://elicit.com",
+    "description": "Assistente de pesquisa que encontra e resume papers relevantes para uma pergunta. Use para acelerar revisões bibliográficas — ele cruza evidências de vários estudos e mostra o que a ciência diz sobre o tema.",
+    "category": "Pesquisa > Ciência e Acadêmico",
+    "tags": [
+      "pesquisa",
+      "resumo",
+      "papers",
+      "revisão bibliográfica",
+      "ia",
+      "evidências",
+      "síntese"
+    ],
+    "preview": "/previews/elicit.jpg"
+  },
+  {
+    "title": "WeLib",
+    "url": "https://welib.st",
+    "description": "Biblioteca online com acervo gratuito de livros em PDF. Use quando precisar de um livro técnico, acadêmico ou literário e não quiser pagar ou esperar entrega.",
+    "category": "Pesquisa > Biblioteca Digital",
+    "tags": [
+      "livros",
+      "pdf",
+      "gratuito",
+      "biblioteca",
+      "técnico",
+      "acadêmico",
+      "download"
+    ],
+    "preview": "/previews/welib.jpg"
+  },
+  {
+    "title": "TinyWow",
+    "url": "https://tinywow.com",
+    "description": "Coleção de mais de 100 ferramentas online para converter, editar ou transformar PDFs, imagens, vídeos e textos. Use quando precisar de uma tarefa pontual sem instalar nenhum software.",
+    "category": "Utilitários > Conversão e Ferramentas Gerais",
+    "tags": [
+      "pdf",
+      "conversão",
+      "imagem",
+      "vídeo",
+      "texto",
+      "gratuito",
+      "online",
+      "sem instalação"
+    ],
+    "preview": "/previews/tinywow.jpg"
+  },
+  {
+    "title": "AlternativeTo",
+    "url": "https://alternativeto.net",
+    "description": "Encontra alternativas a qualquer software, com filtros por plataforma, preço e licença. Use quando um programa for caro, descontinuado ou indisponível na sua plataforma.",
+    "category": "Utilitários > Descoberta de Software",
+    "tags": [
+      "alternativas",
+      "software",
+      "open source",
+      "gratuito",
+      "comparação",
+      "ferramentas"
+    ],
+    "preview": "/previews/alternativeto.jpg"
+  },
+  {
+    "title": "Paperme",
+    "url": "https://paperme.pixzens.com/pt",
+    "description": "Gera e imprime templates de papel pautado, quadriculado, pontilhado e outros estilos. Use quando precisar de cadernos personalizados para anotações, planejamento ou bullet journal.",
+    "category": "Utilitários > Organização e Produtividade",
+    "tags": [
+      "papel pautado",
+      "templates",
+      "impressão",
+      "bullet journal",
+      "organização",
+      "caderno"
+    ],
+    "preview": "/previews/paperme.jpg"
+  },
+  {
+    "title": "Have I Been Pwned",
+    "url": "https://haveibeenpwned.com",
+    "description": "Verifica se seu e-mail ou senha aparecem em algum vazamento de dados conhecido. Use periodicamente para saber se suas credenciais estão expostas e se você precisa trocar senhas.",
+    "category": "Segurança > Privacidade e Proteção de Dados",
+    "tags": [
+      "vazamento",
+      "senha",
+      "e-mail",
+      "privacidade",
+      "segurança",
+      "breach",
+      "credenciais"
+    ],
+    "preview": "/previews/have-i-been-pwned.jpg"
+  },
+  {
+    "title": "VirusTotal",
+    "url": "https://virustotal.com",
+    "description": "Analisa arquivos e links com mais de 70 engines de antivírus ao mesmo tempo. Use antes de baixar ou abrir qualquer arquivo suspeito recebido por e-mail, link ou download.",
+    "category": "Segurança > Análise de Ameaças",
+    "tags": [
+      "antivírus",
+      "scan",
+      "malware",
+      "arquivos",
+      "links",
+      "segurança",
+      "análise"
+    ],
+    "preview": "/previews/virus-total.jpg"
+  },
+  {
+    "title": "Account Killer",
+    "url": "https://www.accountkiller.com",
+    "description": "Guia com links diretos para deletar contas em centenas de serviços online. Use quando quiser limpar sua presença digital e remover contas esquecidas que acumulam dados pessoais.",
+    "category": "Segurança > Privacidade e Proteção de Dados",
+    "tags": [
+      "deletar conta",
+      "privacidade",
+      "rastro digital",
+      "limpeza",
+      "dados pessoais",
+      "serviços"
+    ],
+    "preview": "/previews/account-killer.jpg"
+  },
+  {
+    "title": "DownDetector",
+    "url": "https://downdetector.com.br",
+    "description": "Mostra em tempo real se um serviço online está fora do ar, com mapa de incidentes e histórico. Use quando um site ou app parar de funcionar para saber se o problema é seu ou global.",
+    "category": "Monitoramento > Status de Serviços",
+    "tags": [
+      "status",
+      "fora do ar",
+      "monitoramento",
+      "incidentes",
+      "tempo real",
+      "serviços"
+    ],
+    "preview": "/previews/downdetector.jpg"
+  },
+  {
+    "title": "Fast.com",
+    "url": "https://fast.com",
+    "description": "Teste de velocidade de internet simples e preciso, feito pela Netflix. Use quando quiser verificar rapidamente sua velocidade real de download sem instalar nada.",
+    "category": "Monitoramento > Rede e Conectividade",
+    "tags": [
+      "velocidade",
+      "internet",
+      "download",
+      "teste",
+      "conexão",
+      "latência",
+      "netflix"
+    ],
+    "preview": "/previews/fast-com.jpg"
+  },
+  {
+    "title": "FlightRadar24",
+    "url": "https://flightradar24.com",
+    "description": "Mapa global em tempo real com todos os voos comerciais ativos, rotas e dados de altitude. Use para acompanhar um voo específico, entender tráfego aéreo ou simplesmente explorar o movimento de aviões.",
+    "category": "Monitoramento > Rastreamento em Tempo Real",
+    "tags": [
+      "voos",
+      "aviação",
+      "rastreamento",
+      "mapa",
+      "tempo real",
+      "altitude",
+      "rota"
+    ],
+    "preview": "/previews/flightradar24.jpg"
+  },
+  {
+    "title": "JustWatch",
+    "url": "https://justwatch.com",
+    "description": "Mostra em qual plataforma de streaming um filme ou série está disponível no seu país. Use antes de assinar um serviço novo ou para não perder tempo procurando onde está aquele título.",
+    "category": "Monitoramento > Entretenimento",
+    "tags": [
+      "streaming",
+      "filmes",
+      "séries",
+      "netflix",
+      "disponibilidade",
+      "comparação",
+      "plataformas"
+    ],
+    "preview": "/previews/justwatch.jpg"
   }
 ]
