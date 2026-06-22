@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Intro HD",
+    "url": "https://intro-hd.net",
+    "description": "Use quando precisar de templates prontos para After Effects ou Premiere sem partir do zero. Tem intros, transições, lower thirds e títulos animados — útil para acelerar edições de vídeo com aparência profissional.",
+    "category": "Vídeo > Templates e Assets",
+    "tags": ["after effects", "premiere pro", "templates", "motion graphics", "lower thirds", "transições"]
+  },
+  {
+    "title": "Frameset",
+    "url": "https://frameset.app/search",
+    "description": "Busca de frames de filmes específicos por cena, estilo ou composição. Ideal para montar moodboards, estudar enquadramento e iluminação, ou encontrar referências visuais antes de filmar ou editar.",
+    "category": "Vídeo > Referência Cinematográfica",
+    "tags": ["frames", "cinema", "composição", "iluminação", "color grading", "moodboard", "direção de fotografia"]
+  },
+  {
+    "title": "Clip.Cafe",
+    "url": "https://clip.cafe",
+    "description": "Banco de cenas e falas de filmes pesquisáveis por diálogo ou personagem. Use quando precisar encontrar uma cena específica de um filme para referência narrativa, análise ou criação de conteúdo.",
+    "category": "Vídeo > Referência Cinematográfica",
+    "tags": ["filmes", "cenas", "diálogos", "pesquisa", "narrativa", "referência"]
+  },
+  {
+    "title": "PlayPhrase",
+    "url": "https://www.playphrase.me",
+    "description": "Digite qualquer frase e veja todas as cenas de filmes e séries onde ela foi dita. Útil para encontrar referências de timing, atuação, ou criar compilações e memes.",
+    "category": "Vídeo > Referência Cinematográfica",
+    "tags": ["filmes", "séries", "frases", "atuação", "timing", "memes", "compilação"]
+  }
+]
