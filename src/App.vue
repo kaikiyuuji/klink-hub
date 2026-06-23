@@ -64,6 +64,10 @@ const resultLabel = computed(() => {
   return `Exibindo ${shown} de ${total} ${total === 1 ? 'link' : 'links'}`
 })
 
+const hasActiveFilters = computed(
+  () => activeCategory.value !== 'Todos' || searchQuery.value.trim().length > 0,
+)
+
 function applyTheme(dark) {
   isDark.value = dark
   document.documentElement.dataset.theme = dark ? 'dark' : 'light'
@@ -222,7 +226,18 @@ onBeforeUnmount(() => {
           <p class="technical-label">02 / Vitrine de links</p>
           <h2>{{ activeCategory }}</h2>
         </div>
-        <p>Selecione uma tag para cruzar categorias ou use a busca acima.</p>
+        <div class="catalog__heading-actions">
+          <p>Selecione uma tag para cruzar categorias ou use a busca acima.</p>
+          <button
+            v-if="hasActiveFilters"
+            class="clear-filters"
+            type="button"
+            @click="clearFilters"
+          >
+            Limpar filtros
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
       </div>
 
       <div v-if="isLoading" class="links-grid" aria-label="Carregando catálogo">

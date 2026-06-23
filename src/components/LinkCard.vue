@@ -41,14 +41,25 @@ function onPreviewError() {
 }
 
 function toggleDescription() {
+  window.clearTimeout(descriptionTimer)
+  descriptionHoverOpen.value = false
   descriptionOpen.value = !descriptionOpen.value
 }
 
-function closeDescription() {
+function closeDescription(event) {
+  window.clearTimeout(descriptionTimer)
   descriptionOpen.value = false
+  descriptionHoverOpen.value = false
+  event?.currentTarget?.blur()
+}
+
+function supportsDescriptionHover() {
+  return window.matchMedia('(hover: hover) and (pointer: fine)').matches
 }
 
 function scheduleDescription() {
+  if (!supportsDescriptionHover()) return
+
   window.clearTimeout(descriptionTimer)
   descriptionTimer = window.setTimeout(() => {
     descriptionHoverOpen.value = true
@@ -56,6 +67,23 @@ function scheduleDescription() {
 }
 
 function cancelDescription() {
+  window.clearTimeout(descriptionTimer)
+  if (!descriptionOpen.value) descriptionHoverOpen.value = false
+}
+
+function handleDescriptionFocus() {
+  if (!supportsDescriptionHover()) return
+  window.clearTimeout(descriptionTimer)
+  descriptionHoverOpen.value = true
+}
+
+function handleDescriptionBlur(event) {
+  if (event.currentTarget.contains(event.relatedTarget)) return
+  descriptionHoverOpen.value = false
+}
+
+function handleDescriptionPointerDown(event) {
+  if (event.pointerType === 'mouse') return
   window.clearTimeout(descriptionTimer)
   descriptionHoverOpen.value = false
 }
@@ -132,6 +160,9 @@ onBeforeUnmount(() => {
         tabindex="0"
         @mouseenter="scheduleDescription"
         @mouseleave="cancelDescription"
+        @focusin="handleDescriptionFocus"
+        @focusout="handleDescriptionBlur"
+        @pointerdown="handleDescriptionPointerDown"
         @keydown.esc="closeDescription"
       >
         <p class="link-card__description">{{ link.description }}</p>
@@ -509,8 +540,6 @@ onBeforeUnmount(() => {
   line-height: 1.72;
 }
 
-.description-shell:focus .description-popover,
-.description-shell:focus-within .description-popover,
 .description-shell.is-open .description-popover {
   visibility: visible;
   opacity: 1;
@@ -518,7 +547,6 @@ onBeforeUnmount(() => {
   transform: translateY(0);
 }
 
-.link-card:has(.description-shell:focus-within),
 .link-card.description-is-open {
   z-index: 20;
 }
@@ -638,12 +666,5 @@ onBeforeUnmount(() => {
     place-items: center;
   }
 
-  .description-shell:focus:not(.is-open) .description-popover,
-  .description-shell:focus-within:not(.is-open) .description-popover {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(5px);
-  }
 }
 </style>

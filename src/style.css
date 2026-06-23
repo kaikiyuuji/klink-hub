@@ -330,13 +330,57 @@ a {
   line-height: 0.95;
 }
 
-.catalog__heading > p {
+.catalog__heading-actions {
+  display: flex;
+  max-width: 440px;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.catalog__heading-actions p {
   max-width: 390px;
   margin: 0;
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.65;
   text-align: right;
+}
+
+.clear-filters {
+  display: inline-flex;
+  min-height: 40px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--paper-raised);
+  padding: 0 0.8rem;
+  color: var(--ink);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition:
+    background 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.clear-filters span {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.clear-filters:hover {
+  background: var(--ink);
+  box-shadow: 4px 4px 0 var(--accent);
+  color: var(--paper);
+  transform: translate(-2px, -2px);
 }
 
 .links-grid {
@@ -442,8 +486,18 @@ a {
     gap: 1rem;
   }
 
-  .catalog__heading > p {
+  .catalog__heading-actions {
+    width: 100%;
+    max-width: none;
+    align-items: stretch;
+  }
+
+  .catalog__heading-actions p {
     text-align: left;
+  }
+
+  .clear-filters {
+    width: 100%;
   }
 
   .links-grid {
