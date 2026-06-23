@@ -167,11 +167,21 @@ onBeforeUnmount(() => {
           <span class="brand__mark" aria-hidden="true">KH</span>
           <span class="brand__copy">
             <strong>Klink Hub</strong>
-            <span>Catálogo digital / 2026</span>
+            <span>Por Kaiki Hirata / 2026</span>
           </span>
         </a>
 
         <div class="topbar__status">
+          <a
+            class="portfolio-link"
+            href="https://kaikihirata.dev"
+            target="_blank"
+            rel="author noopener noreferrer"
+            aria-label="Abrir portfólio de Kaiki Hirata em uma nova aba"
+          >
+            <span>Meu portfólio</span>
+            <b aria-hidden="true">↗</b>
+          </a>
           <span class="system-status">
             <span class="system-status__dot" aria-hidden="true"></span>
             Base online
