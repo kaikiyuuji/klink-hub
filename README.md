@@ -1,3 +1,4 @@
+<img width="1280" height="720" alt="Design sem nome" src="https://github.com/user-attachments/assets/1f82e5af-fc1a-44ce-86fa-922172caa812" />
 # Klink Hub
 
 Catálogo visual estático de links úteis, feito com Vue 3 + Vite.
