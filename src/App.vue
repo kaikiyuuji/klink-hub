@@ -12,6 +12,7 @@ const isLoading = ref(true)
 const loadError = ref('')
 const searchQuery = ref('')
 const activeCategory = ref('Todos')
+const activeSort = ref('default')
 const isDark = ref(false)
 const headerHidden = ref(false)
 const headerElevated = ref(false)
@@ -87,6 +88,13 @@ const catalogOptions = [
 const catalogs = Object.fromEntries(catalogOptions.map((catalog) => [catalog.id, catalog]))
 const activeCatalogId = ref(getCatalogFromHash())
 const activeCatalog = computed(() => catalogs[activeCatalogId.value] || catalogs.links)
+const titleCollator = new Intl.Collator('pt-BR', { numeric: true, sensitivity: 'base' })
+
+const sortOptions = [
+  { id: 'default', label: 'Padrão' },
+  { id: 'title-asc', label: 'Nome crescente' },
+  { id: 'title-desc', label: 'Nome decrescente' },
+]
 
 const categories = computed(() => {
   const counts = catalogItems.value.reduce((accumulator, item) => {
@@ -119,8 +127,18 @@ const filteredItems = computed(() => {
   })
 })
 
+const sortedItems = computed(() => {
+  if (activeSort.value === 'default') return filteredItems.value
+
+  const direction = activeSort.value === 'title-desc' ? -1 : 1
+  return [...filteredItems.value].sort(
+    (first, second) =>
+      titleCollator.compare(first.title || '', second.title || '') * direction,
+  )
+})
+
 const resultLabel = computed(() => {
-  const shown = filteredItems.value.length
+  const shown = sortedItems.value.length
   const total = catalogItems.value.length
   return `Exibindo ${shown} de ${total} ${resourceLabel(total)}`
 })
@@ -165,6 +183,10 @@ function syncCatalogFromHash() {
 
 function selectCategory(category) {
   activeCategory.value = category
+}
+
+function selectSort(sortId) {
+  activeSort.value = sortId
 }
 
 function selectTag(tag) {
@@ -380,6 +402,32 @@ onBeforeUnmount(() => {
         </div>
         <div class="catalog__heading-actions">
           <p>{{ activeCatalog.filterHint }}</p>
+          <div class="sort-control" role="group" aria-label="Ordenação do catálogo">
+            <span>Ordenar</span>
+            <button
+              v-for="option in sortOptions"
+              :key="option.id"
+              type="button"
+              :class="{ active: activeSort === option.id }"
+              :aria-pressed="activeSort === option.id"
+              @click="selectSort(option.id)"
+            >
+              {{ option.label }}
+            </button>
+            <select
+              v-model="activeSort"
+              class="sort-control__select"
+              aria-label="Ordenar catálogo"
+            >
+              <option
+                v-for="option in sortOptions"
+                :key="option.id"
+                :value="option.id"
+              >
+                {{ option.label }}
+              </option>
+            </select>
+          </div>
           <button
             v-if="hasActiveFilters"
             class="clear-filters"
@@ -405,10 +453,10 @@ onBeforeUnmount(() => {
         @clear="reloadPage"
       />
 
-      <div v-else-if="filteredItems.length" class="links-grid">
+      <div v-else-if="sortedItems.length" class="links-grid">
         <template v-if="activeCatalogId === 'links'">
           <LinkCard
-            v-for="(item, index) in filteredItems"
+            v-for="(item, index) in sortedItems"
             :key="item.url"
             :link="item"
             :index="index"
@@ -417,7 +465,7 @@ onBeforeUnmount(() => {
         </template>
         <template v-else>
           <RepoCard
-            v-for="(item, index) in filteredItems"
+            v-for="(item, index) in sortedItems"
             :key="item.url"
             :repository="item"
             :index="index"

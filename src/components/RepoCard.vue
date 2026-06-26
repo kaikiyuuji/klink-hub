@@ -343,6 +343,7 @@ function onImageError() {
   flex-wrap: wrap;
   gap: 0.42rem;
   margin-top: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .tags button {

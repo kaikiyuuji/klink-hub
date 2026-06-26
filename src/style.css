@@ -447,6 +447,56 @@ a {
   text-align: right;
 }
 
+.sort-control {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+}
+
+.sort-control span,
+.sort-control button {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  border: 0;
+  border-radius: 0;
+  border-left: 1px solid var(--line);
+  background: transparent;
+  padding: 0 0.68rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.53rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.sort-control span {
+  border-left: 0;
+  color: var(--accent);
+}
+
+.sort-control button {
+  cursor: pointer;
+  color: var(--muted);
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.sort-control button:hover {
+  background: color-mix(in srgb, var(--accent) 8%, var(--paper-raised));
+  color: var(--ink);
+}
+
+.sort-control button.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.sort-control__select {
+  display: none;
+}
+
 .clear-filters {
   display: inline-flex;
   min-height: 40px;
@@ -631,6 +681,43 @@ a {
 
   .clear-filters {
     width: 100%;
+  }
+
+  .sort-control {
+    display: grid;
+    min-height: 46px;
+    align-items: center;
+    grid-template-columns: auto minmax(0, 1fr);
+    width: 100%;
+    background: var(--paper);
+  }
+
+  .sort-control span {
+    min-height: 44px;
+    border-left: 0;
+    border-top: 0;
+    padding-right: 0.25rem;
+  }
+
+  .sort-control button {
+    display: none;
+  }
+
+  .sort-control__select {
+    display: block;
+    width: 100%;
+    min-height: 42px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    padding: 0 0.68rem 0 0.2rem;
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   .catalog-meta {
