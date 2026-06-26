@@ -1,4 +1,15 @@
 <script setup>
+defineProps({
+  placeholder: {
+    type: String,
+    default: 'Título, tag, URL...',
+  },
+  ariaLabelText: {
+    type: String,
+    default: 'Pesquisar links',
+  },
+})
+
 const model = defineModel({
   type: String,
   default: '',
@@ -21,8 +32,8 @@ function clearSearch() {
         v-model="model"
         type="search"
         autocomplete="off"
-        placeholder="Título, tag, URL..."
-        aria-label="Pesquisar links"
+        :placeholder="placeholder"
+        :aria-label="ariaLabelText"
       />
       <button
         v-if="model"

@@ -1,13 +1,42 @@
 <img width="1280" height="720" alt="Design sem nome" src="https://github.com/user-attachments/assets/1f82e5af-fc1a-44ce-86fa-922172caa812" />
 # Klink Hub
 
-Catálogo visual estático de links úteis, feito com Vue 3 + Vite.
+Catálogo visual estático de links úteis e repositórios open source, feito com Vue 3 + Vite.
 
 ## Desenvolvimento
 
 ```bash
 npm install
 npm run dev
+```
+
+## Catálogos
+
+O projeto tem duas páginas frontend, ambas carregadas por JSON público:
+
+- `#/links`: lê `public/links.json` e usa previews locais de sites.
+- `#/repos`: lê `public/repos.json` e usa imagens de repositório.
+
+Para adicionar um repositório, inclua um item em `public/repos.json`:
+
+```json
+{
+  "title": "Cal.com",
+  "url": "https://github.com/calcom/cal.com",
+  "category": "Agendamento",
+  "tags": ["negocio", "servidor"],
+  "replaces": "Calendly Teams (~$16/usuário/mês)",
+  "useCase": "Qualquer sistema de agendamento de reuniões/consultas."
+}
+```
+
+Se o campo `image` não for informado, a página monta automaticamente uma imagem
+com o OpenGraph do GitHub. Para usar uma arte própria, adicione:
+
+```json
+{
+  "image": "/repos/cal-com.png"
+}
 ```
 
 ## Gerar previews locais

@@ -1,0 +1,394 @@
+[
+  {
+    "title": "Cal.com",
+    "url": "https://github.com/calcom/cal.com",
+    "category": "Agendamento",
+    "tags": ["negocio", "servidor"],
+    "replaces": "Calendly Teams (~$16/usuário/mês)",
+    "useCase": "Qualquer sistema de agendamento de reuniões, consultas, calls comerciais ou atendimento."
+  },
+  {
+    "title": "Plausible Analytics",
+    "url": "https://github.com/plausible/analytics",
+    "category": "Analytics",
+    "tags": ["negocio", "uso-proprio", "servidor"],
+    "replaces": "Google Analytics 360 (~$150k/ano enterprise)",
+    "useCase": "Rastrear tráfego de sites com foco em privacidade, sem cookies e sem excesso de dados."
+  },
+  {
+    "title": "n8n",
+    "url": "https://github.com/n8n-io/n8n",
+    "category": "Automação",
+    "tags": ["negocio", "uso-proprio", "servidor"],
+    "replaces": "Zapier Pro (~$600/mês)",
+    "useCase": "Automatizar fluxos entre APIs, apps, bancos de dados e rotinas internas sem escrever tudo do zero."
+  },
+  {
+    "title": "Supabase",
+    "url": "https://github.com/supabase/supabase",
+    "category": "Backend e Banco de Dados",
+    "tags": ["negocio", "uso-proprio", "servidor"],
+    "replaces": "Firebase",
+    "useCase": "Construir SaaS rapidamente com autenticação, banco Postgres, storage e APIs prontos."
+  },
+  {
+    "title": "Penpot",
+    "url": "https://github.com/penpot/penpot",
+    "category": "Design e Criação",
+    "tags": ["negocio", "uso-proprio", "servidor"],
+    "replaces": "Figma (~$45/editor/mês)",
+    "useCase": "Design de interfaces e protótipos, especialmente quando o cliente não quer arquivos em nuvem de terceiros."
+  },
+  {
+    "title": "PhotoGIMP",
+    "url": "https://github.com/Diolinux/PhotoGIMP",
+    "category": "Design e Criação",
+    "tags": ["uso-proprio", "local"],
+    "replaces": "Adobe Photoshop (~$600/ano)",
+    "useCase": "Edição de imagens no desktop com os mesmos atalhos e layout do Photoshop."
+  },
+  {
+    "title": "OpenToonz",
+    "url": "https://github.com/opentoonz/opentoonz",
+    "category": "Design e Criação",
+    "tags": ["uso-proprio", "local"],
+    "replaces": "Toon Boom Harmony (~$1.575/ano)",
+    "useCase": "Animação 2D profissional. Usado pelo Studio Ghibli."
+  },
+  {
+    "title": "Fooocus",
+    "url": "https://github.com/lllyasviel/Fooocus",
+    "category": "Design e Criação",
+    "tags": ["uso-proprio", "local"],
+    "replaces": "Midjourney (~$30/mês)",
+    "useCase": "Geração de imagens de alta qualidade localmente com GPU própria. Gerações ilimitadas."
+  },
+  {
+    "title": "Ollama",
+    "url": "https://github.com/ollama/ollama",
+    "category": "IA Local",
+    "tags": ["uso-proprio", "local"],
+    "replaces": "OpenAI API (~$500/mês para devs pesados)",
+    "useCase": "Rodar modelos como Llama, Mistral, Qwen e DeepSeek no próprio computador, sem API, sem custo e sem dados saindo da máquina."
+  },
+  {
+    "title": "Whisper",
+    "url": "https://github.com/openai/whisper",
+    "category": "IA Local",
+    "tags": ["uso-proprio", "local"],
+    "replaces": "Otter.ai (~$20/mês)",
+    "useCase": "Transcrever áudios e vídeos em 99 idiomas, offline e de graça."
+  },
+  {
+    "title": "agentmemory",
+    "url": "https://github.com/rohitg00/agentmemory",
+    "category": "IA Local",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Adicionar memória persistente a agentes de IA."
+  },
+  {
+    "title": "UI-TARS-desktop",
+    "url": "https://github.com/bytedance/UI-TARS-desktop",
+    "category": "IA Local",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Stack de agentes de IA multimodal open-source que conecta modelos de ponta com infraestrutura de agentes."
+  },
+  {
+    "title": "DeepSeek-TUI",
+    "url": "https://github.com/Hmbown/DeepSeek-TUI",
+    "category": "IA Local",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Agente de codificação para modelos DeepSeek direto no terminal."
+  },
+  {
+    "title": "AiToEarn",
+    "url": "https://github.com/yikart/AiToEarn",
+    "category": "IA Local",
+    "tags": ["negocio", "local"],
+    "replaces": null,
+    "useCase": "Ferramentas para usar IA como fonte de renda."
+  },
+  {
+    "title": "AI-Trader",
+    "url": "https://github.com/HKUDS/AI-Trader",
+    "category": "IA Local",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Trading automatizado com agentes de IA."
+  },
+  {
+    "title": "Coolify",
+    "url": "https://github.com/coollabsio/coolify",
+    "category": "Infraestrutura e Deploy",
+    "tags": ["negocio", "uso-proprio", "servidor"],
+    "replaces": "Vercel / Heroku (~$200/mês)",
+    "useCase": "Gerenciar deploys de apps em servidor próprio com painel visual."
+  },
+  {
+    "title": "Listmonk",
+    "url": "https://github.com/knadh/listmonk",
+    "category": "E-mail Marketing",
+    "tags": ["negocio", "uso-proprio", "servidor"],
+    "replaces": "Mailchimp",
+    "useCase": "Envio de e-mails em massa pagando apenas o custo da AWS, sem limite de contatos."
+  },
+  {
+    "title": "Medusa",
+    "url": "https://github.com/medusajs/medusa",
+    "category": "E-commerce",
+    "tags": ["negocio", "servidor"],
+    "replaces": "Shopify",
+    "useCase": "Lojas virtuais com controle total e zero taxa de plataforma."
+  },
+  {
+    "title": "AppFlowy",
+    "url": "https://github.com/AppFlowy-IO/AppFlowy",
+    "category": "Produtividade e Notas",
+    "tags": ["negocio", "uso-proprio", "local", "servidor"],
+    "replaces": "Notion (~$20/usuário/mês)",
+    "useCase": "Workspace de notas, tarefas e base de conhecimento. Funciona local ou no servidor."
+  },
+  {
+    "title": "Anytype",
+    "url": "https://github.com/anyproto/anytype-ts",
+    "category": "Produtividade e Notas",
+    "tags": ["uso-proprio", "local"],
+    "replaces": "Notion + Roam (~$20/mês)",
+    "useCase": "Notas, tarefas e base de conhecimento totalmente local e criptografada."
+  },
+  {
+    "title": "Ghost",
+    "url": "https://github.com/TryGhost/Ghost",
+    "category": "Produtividade e Notas",
+    "tags": ["negocio", "servidor"],
+    "replaces": "Substack",
+    "useCase": "Newsletter ou blog com assinaturas pagas, ficando com 100% da receita."
+  },
+  {
+    "title": "skills (mattpocock)",
+    "url": "https://github.com/mattpocock/skills",
+    "category": "Produtividade e Notas",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Conjunto de habilidades e prompts para engenheiros, direto do diretório .claude do autor."
+  },
+  {
+    "title": "Paperless-ngx",
+    "url": "https://github.com/paperless-ngx/paperless-ngx",
+    "category": "Gestão de Documentos",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "Adobe Scan + Evernote (~$15/mês)",
+    "useCase": "Digitalizar, fazer OCR e organizar automaticamente recibos, faturas e documentos fiscais."
+  },
+  {
+    "title": "Stirling-PDF",
+    "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+    "category": "Gestão de Documentos",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "Adobe Acrobat Pro (~$20–$240/mês)",
+    "useCase": "Mesclar, dividir, fazer OCR, comprimir, assinar e redigir PDFs. Roda no Docker."
+  },
+  {
+    "title": "Karakeep",
+    "url": "https://github.com/karakeep-app/karakeep",
+    "category": "Gestão de Documentos",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "Raindrop Pro + Pocket (~$15/mês)",
+    "useCase": "Salvar links, capturas de tela, artigos e PDFs com marcação automática por IA."
+  },
+  {
+    "title": "Immich",
+    "url": "https://github.com/immich-app/immich",
+    "category": "Arquivos e Mídia",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "Google Photos",
+    "useCase": "Backup e organização de fotos com reconhecimento facial, com dados no próprio servidor."
+  },
+  {
+    "title": "Audiobookshelf",
+    "url": "https://github.com/advplyr/audiobookshelf",
+    "category": "Arquivos e Mídia",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "Audible + podcasts premium (~$30/mês)",
+    "useCase": "Hospedar e ouvir audiobooks e podcasts em todos os dispositivos."
+  },
+  {
+    "title": "yt-dlp",
+    "url": "https://github.com/yt-dlp/yt-dlp",
+    "category": "Arquivos e Mídia",
+    "tags": ["uso-proprio", "local"],
+    "replaces": "YouTube Premium (~$14/mês)",
+    "useCase": "Baixar vídeos do YouTube, X, TikTok, Instagram e praticamente qualquer plataforma."
+  },
+  {
+    "title": "ente",
+    "url": "https://github.com/ente-io/ente",
+    "category": "Arquivos e Mídia",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "Google Photos",
+    "useCase": "Alternativa com criptografia de ponta a ponta para fotos e autenticador 2FA."
+  },
+  {
+    "title": "ArchiveBox",
+    "url": "https://github.com/ArchiveBox/ArchiveBox",
+    "category": "Arquivos e Mídia",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": null,
+    "useCase": "Salvar URLs como HTML, PDF, screenshot e vídeo. Uma espécie de Wayback Machine pessoal."
+  },
+  {
+    "title": "Vaultwarden",
+    "url": "https://github.com/dani-garcia/vaultwarden",
+    "category": "Segurança e Privacidade",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "1Password Family (~$10/mês)",
+    "useCase": "Servidor Bitwarden auto-hospedado e leve, com senhas criptografadas no seu servidor."
+  },
+  {
+    "title": "Bitwarden (servidor)",
+    "url": "https://github.com/bitwarden/server",
+    "category": "Segurança e Privacidade",
+    "tags": ["negocio", "uso-proprio", "servidor"],
+    "replaces": "1Password (~$8/usuário/mês)",
+    "useCase": "Servidor oficial do Bitwarden para deploy empresarial."
+  },
+  {
+    "title": "AdGuard Home",
+    "url": "https://github.com/AdguardTeam/AdGuardHome",
+    "category": "Segurança e Privacidade",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "NextDNS Premium (~$20/mês)",
+    "useCase": "Bloquear anúncios e rastreadores em toda a rede doméstica, incluindo celulares, TVs e laptops."
+  },
+  {
+    "title": "uBlock Origin",
+    "url": "https://github.com/gorhill/uBlock",
+    "category": "Segurança e Privacidade",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Bloqueador de anúncios para navegador."
+  },
+  {
+    "title": "Syncthing",
+    "url": "https://github.com/syncthing/syncthing",
+    "category": "Rede e Sincronização",
+    "tags": ["uso-proprio", "local"],
+    "replaces": "Dropbox 2TB (~$15/mês)",
+    "useCase": "Sincronizar arquivos entre dispositivos peer-to-peer, sem nuvem e sem conta."
+  },
+  {
+    "title": "LocalSend",
+    "url": "https://github.com/localsend/localsend",
+    "category": "Rede e Sincronização",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Transferir arquivos entre iPhone, Android, Windows, Mac e Linux offline. AirDrop multiplataforma."
+  },
+  {
+    "title": "hysteria",
+    "url": "https://github.com/apernet/hysteria",
+    "category": "Rede e Sincronização",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": null,
+    "useCase": "Proxy rápido e resistente à censura."
+  },
+  {
+    "title": "Crawl4AI",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "category": "Scraping e Automação Web",
+    "tags": ["uso-proprio", "local", "servidor"],
+    "replaces": null,
+    "useCase": "Crawling otimizado para saída em formato amigável para IA."
+  },
+  {
+    "title": "Firecrawl",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "category": "Scraping e Automação Web",
+    "tags": ["negocio", "uso-proprio", "servidor"],
+    "replaces": null,
+    "useCase": "Transformar qualquer site em dados estruturados limpos para LLMs."
+  },
+  {
+    "title": "Scrapy",
+    "url": "https://github.com/scrapy/scrapy",
+    "category": "Scraping e Automação Web",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Scraping em larga escala com Python. O padrão da indústria para projetos sérios."
+  },
+  {
+    "title": "Crawlee",
+    "url": "https://github.com/apify/crawlee",
+    "category": "Scraping e Automação Web",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Scraping com Node.js/TypeScript, com suporte nativo a Playwright e Puppeteer."
+  },
+  {
+    "title": "Playwright",
+    "url": "https://github.com/microsoft/playwright",
+    "category": "Scraping e Automação Web",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Automação de browser para scraping de sites com JS pesado ou para testes E2E."
+  },
+  {
+    "title": "CloakBrowser",
+    "url": "https://github.com/CloakHQ/CloakBrowser",
+    "category": "Scraping e Automação Web",
+    "tags": ["negocio", "uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Scraping sem ser detectado. Drop-in do Playwright com patches de fingerprint."
+  },
+  {
+    "title": "Scrapegraph AI",
+    "url": "https://github.com/ScrapeGraphAI/Scrapegraph-ai",
+    "category": "Scraping e Automação Web",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Scraping guiado por LLM. Descreve o que quer extrair em linguagem natural."
+  },
+  {
+    "title": "Browser Use",
+    "url": "https://github.com/browser-use/browser-use",
+    "category": "Scraping e Automação Web",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Agente de IA que controla o browser para casos onde scraping tradicional não resolve."
+  },
+  {
+    "title": "Katana",
+    "url": "https://github.com/projectdiscovery/katana",
+    "category": "Scraping e Automação Web",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Crawling rápido para mapeamento de endpoints, muito usado em reconhecimento de segurança."
+  },
+  {
+    "title": "9router",
+    "url": "https://github.com/decolua/9router",
+    "category": "Ferramentas de Dev",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Conectar Claude Code, Cursor, Cline e outros a Claude/GPT/Gemini via 40+ provedores gratuitos, com auto-fallback e redução de tokens em ~40%."
+  },
+  {
+    "title": "supersplat",
+    "url": "https://github.com/playcanvas/supersplat",
+    "category": "Ferramentas de Dev",
+    "tags": ["uso-proprio", "local"],
+    "replaces": null,
+    "useCase": "Editar Gaussian Splats 3D."
+  },
+  {
+    "title": "Home Assistant",
+    "url": "https://github.com/home-assistant/core",
+    "category": "Casa Inteligente",
+    "tags": ["uso-proprio", "servidor"],
+    "replaces": "SmartThings Pro + Alexa Plus (~$25/mês)",
+    "useCase": "Centralizar automação de luzes, portas, termostato e câmeras em um único painel local."
+  }
+]

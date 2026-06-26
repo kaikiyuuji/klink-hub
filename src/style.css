@@ -105,6 +105,7 @@ a {
   min-height: 72px;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   border-bottom: 1px solid var(--line);
   padding: 0 clamp(1rem, 3vw, 2rem);
   background: color-mix(in srgb, var(--paper) 90%, transparent);
@@ -152,6 +153,64 @@ a {
 
 .brand:hover .brand__mark {
   transform: rotate(-3deg);
+}
+
+.catalog-switcher {
+  display: inline-flex;
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+}
+
+.catalog-switcher--topbar {
+  margin-inline: auto;
+}
+
+.catalog-switcher--hero {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.catalog-switcher a {
+  display: inline-flex;
+  min-height: 36px;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0 0.78rem;
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.catalog-switcher a + a {
+  border-left: 1px solid var(--line);
+}
+
+.catalog-switcher a:hover {
+  background: color-mix(in srgb, var(--accent) 8%, var(--paper-raised));
+  color: var(--ink);
+}
+
+.catalog-switcher a.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.catalog-switcher strong {
+  color: var(--accent);
+  font-size: 0.5rem;
+}
+
+.catalog-switcher a.active strong {
+  color: var(--paper);
 }
 
 .brand__copy {
@@ -342,6 +401,7 @@ a {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.68rem;
   letter-spacing: 0.03em;
+  line-height: 1.35;
   text-align: right;
 }
 
@@ -467,6 +527,19 @@ a {
 }
 
 @media (max-width: 900px) {
+  .catalog-switcher--topbar {
+    display: none;
+  }
+
+  .catalog-switcher--hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .catalog-switcher--hero a {
+    justify-content: space-between;
+  }
+
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
@@ -524,11 +597,12 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(3.2rem, 16vw, 5rem);
+    font-size: 3rem;
   }
 
   .hero__description {
     margin-top: 1.5rem;
+    overflow-wrap: break-word;
   }
 
   .hero__tools {
@@ -559,6 +633,15 @@ a {
     width: 100%;
   }
 
+  .catalog-meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .catalog-meta strong {
+    text-align: left;
+  }
+
   .links-grid {
     grid-template-columns: 1fr;
   }
@@ -566,6 +649,12 @@ a {
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand__copy > span {
+    display: none;
   }
 }
 
