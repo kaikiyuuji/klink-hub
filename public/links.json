@@ -895,5 +895,320 @@
       "plataformas"
     ],
     "preview": "/previews/justwatch.jpg"
+  },
+  {
+    "title": "Vault ASCII Art Generator",
+    "url": "https://vaultandzn.com/pages/ascii-art-generator",
+    "description": "Converte imagens em arte ASCII instantaneamente, gerando uma saída limpa no estilo terminal, com texto branco sobre fundo preto. Use quando quiser criar arte retrô a partir de fotos — todo o processamento acontece localmente no navegador, sem enviar o arquivo para nenhum servidor.",
+    "category": "Imagem > Arte ASCII",
+    "tags": [
+      "ascii art",
+      "conversão de imagem",
+      "retrô",
+      "terminal",
+      "privacidade",
+      "gratuito"
+    ],
+    "preview": "/previews/vault-ascii-art-generator.jpg"
+  },
+  {
+    "title": "EZ ASCII",
+    "url": "https://ezascii.com/image-to-ascii",
+    "description": "Transforma qualquer foto em arte ASCII com pré-visualização em tempo real e ajuste fino de todos os parâmetros. Use quando precisar exportar o resultado em vários formatos (PNG, JPEG, SVG ou texto simples) — o processamento é feito todo no navegador.",
+    "category": "Imagem > Arte ASCII",
+    "tags": [
+      "ascii art",
+      "conversão de imagem",
+      "exportação",
+      "svg",
+      "tempo real",
+      "gratuito"
+    ],
+    "preview": "/previews/ez-ascii.jpg"
+  },
+  {
+    "title": "Coddy ASCII Art Generator",
+    "url": "https://coddy.tech/tools/ascii-art-generator",
+    "description": "Ferramenta simples para transformar imagens e texto em arte ASCII compartilhável. Use quando quiser um gerador direto, sem configurações complexas, para criar peças rápidas em estilo de caracteres.",
+    "category": "Imagem > Arte ASCII",
+    "tags": [
+      "ascii art",
+      "conversão de imagem",
+      "texto",
+      "compartilhamento",
+      "gratuito"
+    ],
+    "preview": "/previews/coddy-ascii-art-generator.jpg"
+  },
+  {
+    "title": "Oualator ASCII Art Generator",
+    "url": "https://oualator.com/calculate/ascii-art-generator",
+    "description": "Converte esboços, fotos e desenhos em arte ASCII em tempo real usando análise de pixels. Use quando quiser transformar rapidamente uma imagem em preto e branco em uma versão feita de caracteres simples.",
+    "category": "Imagem > Arte ASCII",
+    "tags": [
+      "ascii art",
+      "conversão de imagem",
+      "esboço",
+      "pixel",
+      "tempo real",
+      "gratuito"
+    ],
+    "preview": "/previews/oualator-ascii-art-generator.jpg"
+  },
+  {
+    "title": "8bitcn",
+    "url": "https://www.8bitcn.com/",
+    "description": "Biblioteca de componentes e blocos de UI em estilo 8-bit, de código aberto e prontos para copiar e colar. Use quando quiser dar uma identidade visual retrô e lúdica a um projeto sem construir os componentes do zero.",
+    "category": "Desenvolvimento > Bibliotecas de UI",
+    "tags": [
+      "ui",
+      "componentes",
+      "8-bit",
+      "código aberto",
+      "copiar e colar",
+      "retrô"
+    ],
+    "preview": "/previews/8bitcn.jpg"
+  },
+  {
+    "title": "Magic UI",
+    "url": "https://magicui.design/",
+    "description": "Mais de 150 componentes e efeitos animados, gratuitos e open source, feitos com React, TypeScript, Tailwind CSS e Motion. Use como complemento do shadcn/ui quando precisar montar landing pages minimalistas com toques de animação.",
+    "category": "Desenvolvimento > Bibliotecas de UI",
+    "tags": [
+      "ui",
+      "componentes",
+      "react",
+      "tailwind css",
+      "animação",
+      "landing page",
+      "código aberto"
+    ],
+    "preview": "/previews/magic-ui.jpg"
+  },
+  {
+    "title": "Kokonut UI",
+    "url": "https://kokonutui.com/",
+    "description": "Coleção com mais de 100 componentes de interface modernos, criados com Tailwind CSS, shadcn/ui e Motion. Use quando precisar de blocos de UI já animados e prontos para inserir diretamente no seu site.",
+    "category": "Desenvolvimento > Bibliotecas de UI",
+    "tags": [
+      "ui",
+      "componentes",
+      "tailwind css",
+      "shadcn",
+      "animação",
+      "interface"
+    ],
+    "preview": "/previews/kokonut-ui.jpg"
+  },
+  {
+    "title": "Aceternity UI",
+    "url": "https://ui.aceternity.com/",
+    "description": "Mais de 200 componentes, blocos e modelos prontos para produção, com aparência de projeto feito por uma equipe de design profissional. Use quando quiser publicar uma landing page rapidamente, personalizando animações em Framer Motion e Tailwind sem complicação.",
+    "category": "Desenvolvimento > Bibliotecas de UI",
+    "tags": [
+      "ui",
+      "componentes",
+      "landing page",
+      "framer motion",
+      "tailwind css",
+      "templates"
+    ],
+    "preview": "/previews/aceternity-ui.jpg"
+  },
+  {
+    "title": "React Bits",
+    "url": "https://reactbits.dev/",
+    "description": "Componentes React animados e altamente personalizáveis, voltados para desenvolvedores criativos. Use quando quiser fundos e elementos visuais que fazem um projeto se destacar instantaneamente.",
+    "category": "Desenvolvimento > Bibliotecas de UI",
+    "tags": [
+      "ui",
+      "componentes",
+      "react",
+      "animação",
+      "personalização",
+      "criativo"
+    ],
+    "preview": "/previews/react-bits.jpg"
+  },
+  {
+    "title": "Animos",
+    "url": "https://animos.app/",
+    "description": "Cria motion design para cards e carrosséis, exibindo seus designs em movimento. Use quando quiser exportar um MP4 direto do navegador, escolhendo um modelo e inserindo suas próprias imagens ou vídeos sem instalar nada.",
+    "category": "Vídeo > Assets Visuais",
+    "tags": [
+      "motion design",
+      "cards",
+      "carrossel",
+      "exportar",
+      "mp4",
+      "vídeo"
+    ],
+    "preview": "/previews/animos.jpg"
+  },
+  {
+    "title": "Savee",
+    "url": "https://savee.com/",
+    "description": "Curadoria visual feita por designers para designers, com foco em direções de arte modernas e estéticas minimalistas. Use quando precisar de inspiração refinada e experimental para projetos visuais.",
+    "category": "Design > Inspiração e Referência",
+    "tags": [
+      "inspiração",
+      "curadoria",
+      "direção de arte",
+      "minimalismo",
+      "moodboard",
+      "estética"
+    ],
+    "preview": "/previews/savee.jpg"
+  },
+  {
+    "title": "Cargo Collective",
+    "url": "https://cargo.site/",
+    "description": "A maior referência em portfólios de direção de arte, editorial e estética contemporânea, funcionando como uma galeria de vanguarda. Use quando quiser referências de estúdios de nicho com total liberdade de layout, tipografia e composições autorais — diferente do Behance e do Dribbble.",
+    "category": "Design > Inspiração e Referência",
+    "tags": [
+      "portfólio",
+      "direção de arte",
+      "editorial",
+      "galeria",
+      "layout",
+      "autoral"
+    ],
+    "preview": "/previews/cargo-collective.jpg"
+  },
+  {
+    "title": "Brand New",
+    "url": "https://www.underconsideration.com/brandnew/",
+    "description": "A bíblia do branding mundial, analisando criticamente o redesign de marcas globais. Use quando quiser entender os motivos conceituais e comerciais por trás de mudanças de logo e identidade visual para embasar suas próprias decisões de projeto.",
+    "category": "Design > Inspiração e Referência",
+    "tags": [
+      "branding",
+      "redesign",
+      "identidade visual",
+      "logo",
+      "crítica",
+      "estratégia"
+    ],
+    "preview": "/previews/brand-new.jpg"
+  },
+  {
+    "title": "Fonts In Use",
+    "url": "https://fontsinuse.com/",
+    "description": "Mostra tipografia aplicada em contextos reais — cartazes, embalagens e sites — o que facilita a escolha de fontes. Use quando precisar estudar emparelhamento tipográfico (font pairing) e hierarquia visual antes de decidir uma fonte para o projeto.",
+    "category": "Design > Tipografia",
+    "tags": [
+      "tipografia",
+      "fontes",
+      "font pairing",
+      "referência",
+      "editorial",
+      "hierarquia visual"
+    ],
+    "preview": "/previews/fonts-in-use.jpg"
+  },
+  {
+    "title": "Landbook",
+    "url": "https://land-book.com/",
+    "description": "Galeria de landing pages reais, limpas e focadas em usabilidade para o dia a dia comercial. Use quando quiser referências práticas de conversão, em vez de referências disruptivas de UI/UX como as do Awwwards.",
+    "category": "Design > Inspiração e Referência",
+    "tags": [
+      "landing page",
+      "usabilidade",
+      "conversão",
+      "referência",
+      "web design",
+      "comercial"
+    ],
+    "preview": "/previews/landbook.jpg"
+  },
+  {
+    "title": "Httpster",
+    "url": "https://httpster.net/",
+    "description": "Galeria de direção de arte digital minimalista, como contraponto ao excesso de interações pesadas da web atual. Use quando quiser referências de sites com tipografia impecável, grids inteligentes e layouts limpos e originais.",
+    "category": "Design > Inspiração e Referência",
+    "tags": [
+      "galeria",
+      "minimalismo",
+      "web design",
+      "tipografia",
+      "grid",
+      "direção de arte"
+    ],
+    "preview": "/previews/httpster.jpg"
+  },
+  {
+    "title": "Clay",
+    "url": "https://www.clay.com/",
+    "description": "Encontra empresas, coleta informações de dezenas de fontes e pesquisa cada lead com IA. Use quando quiser automatizar a prospecção de vendas, criando mensagens personalizadas para cada contato automaticamente.",
+    "category": "Negócios > Vendas e Prospecção",
+    "tags": [
+      "vendas",
+      "prospecção",
+      "leads",
+      "ia",
+      "automação",
+      "outreach"
+    ],
+    "preview": "/previews/clay.jpg"
+  },
+  {
+    "title": "Tally",
+    "url": "https://tally.so/",
+    "description": "Cria formulários extremamente bonitos em poucos minutos. Use como alternativa mais simples e barata a ferramentas de formulários mais caras do mercado.",
+    "category": "Utilitários > Formulários e Automação",
+    "tags": [
+      "formulários",
+      "produtividade",
+      "gratuito",
+      "automação",
+      "pesquisa",
+      "dados"
+    ],
+    "preview": "/previews/tally.jpg"
+  },
+  {
+    "title": "Napkin AI",
+    "url": "https://www.napkin.ai/",
+    "description": "Transforma qualquer ideia escrita em diagramas, mapas mentais e visuais profissionais automaticamente com IA. Use quando quiser gerar uma representação visual de um texto sem precisar desenhar manualmente.",
+    "category": "Desenvolvimento > Diagramas e Whiteboards",
+    "tags": [
+      "ia",
+      "diagrama",
+      "mapa mental",
+      "visual",
+      "automação",
+      "texto para imagem"
+    ],
+    "preview": "/previews/napkin-ai.jpg"
+  },
+  {
+    "title": "Nando MP4 - Letras",
+    "url": "https://www.nandomp4.com/letras",
+    "description": "Gerador gratuito e interativo de palavras com letras recortadas de revistas antigas. Use quando quiser criar uma imagem de texto com visual nostálgico e artesanal para posts, vídeos ou capas.",
+    "category": "Vídeo > Assets Visuais",
+    "tags": [
+      "gerador de texto",
+      "recorte",
+      "revista",
+      "nostalgia",
+      "imagem",
+      "gratuito"
+    ],
+    "preview": "/previews/nandomp4-letras.jpg"
+  },
+  {
+    "title": "Swishy",
+    "url": "https://www.swishy.ai/",
+    "description": "Cria componentes de vídeo animados e personalizados com IA, funcionando como um designer de movimento automático. Use quando precisar de animações e tipografias impressionantes para vídeo sem abrir um software de motion design.",
+    "category": "Vídeo > Assets Visuais",
+    "tags": [
+      "ia",
+      "motion design",
+      "animação",
+      "vídeo",
+      "tipografia",
+      "componentes"
+    ],
+    "preview": "/previews/swishy.jpg"
   }
 ]
